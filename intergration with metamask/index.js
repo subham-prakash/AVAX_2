@@ -86,14 +86,16 @@ export default function HomePage() {
     return (
       <div>
         <div>
-          <img src="Your AI Generated Link" alt="NFT 1" />
-          <button onClick={() => downloadNFT(1, "Image Link")} style={{ fontSize: "1.2rem" }}>Download NFT 1</button>
+          <img src="https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay" alt="NFT 1" />
+          <button onClick={() => downloadNFT(1, "https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay")} style={{ fontSize: "1.2rem" }}>Download NFT 1</button>
         </div>
         <div>
-          <img src="Your NFT" alt="NFT 2" />
-          <button onClick={() => downloadNFT(2, "Image link")} style={{ fontSize: "1.2rem" }}>Download NFT 2</button>
+          <img src="https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay" alt="NFT 2" />
+          <button onClick={() => downloadNFT(2, "https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay")} style={{ fontSize: "1.2rem" }}>Download NFT 2</button>
         </div>
         <div>
+          <img src="https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay" alt="NFT 3" />
+          <button onClick={() => downloadNFT(3, "https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay")} style={{ fontSize: "1.2rem" }}>Download NFT 3</button>
         </div>
       </div>
     );
