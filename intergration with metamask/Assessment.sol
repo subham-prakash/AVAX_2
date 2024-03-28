@@ -9,6 +9,7 @@ contract Assessment {
 
     event Deposit(uint256 amount);
     event Withdraw(uint256 amount);
+    event BFTBought(address indexed buyer, uint256 amount);
 
     constructor(uint initBalance) payable {
         owner = payable(msg.sender);
@@ -47,4 +48,16 @@ contract Assessment {
 
         emit Withdraw(_withdrawAmount);
     }
+
+    function buyBFT(uint256 _bftAmount) external payable {
+        require(msg.value == _bftAmount, "Insufficient or excess ether provided");
+
+        uint _previousBalance = balance;
+        balance += _bftAmount;
+
+        assert(balance == _previousBalance + _bftAmount);
+
+        emit BFTBought(msg.sender, _bftAmount);
+    }
 }
+
