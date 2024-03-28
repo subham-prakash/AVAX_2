@@ -69,36 +69,12 @@ export default function HomePage() {
     }
   };
 
-  const downloadNFT = async (nftId, url) => {
-    console.log(`Downloading NFT with ID ${nftId} from URL: ${url}`);
-    window.open(url, "_blank");
-  };
-
   const buyDonation = async () => {
     if (atm) {
       const tx = await atm.deposit({ value: ethers.utils.parseEther("1") });
       await tx.wait();
       getBalance();
     }
-  };
-
-  const renderNFTs = () => {
-    return (
-      <div>
-        <div>
-          <img src="https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay" alt="NFT 1" />
-          <button onClick={() => downloadNFT(1, "https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay")} style={{ fontSize: "1.2rem" }}>Download NFT 1</button>
-        </div>
-        <div>
-          <img src="https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay" alt="NFT 2" />
-          <button onClick={() => downloadNFT(2, "https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay")} style={{ fontSize: "1.2rem" }}>Download NFT 2</button>
-        </div>
-        <div>
-          <img src="https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay" alt="NFT 3" />
-          <button onClick={() => downloadNFT(3, "https://www.bing.com/images/create/create-nft-of-holy-amarnath-cave/1-65e1cd8e6e514e53b1502fc7fdf22586?id=uipNhrI5fFEoVBCKCGFyzw%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.ktEKN8Yq4_4AEJoeI4QB&FORM=GCRIDP&mode=overlay")} style={{ fontSize: "1.2rem" }}>Download NFT 3</button>
-        </div>
-      </div>
-    );
   };
 
   const initUser = () => {
@@ -120,8 +96,6 @@ export default function HomePage() {
         <button onClick={deposit} style={{ fontSize: "1.2rem" }}>Deposit 1 ETH</button>
         <button onClick={withdraw} style={{ fontSize: "1.2rem" }}>Withdraw 1 ETH</button>
         <button onClick={buyDonation} style={{ fontSize: "1.2rem" }}>Buy Premium NFTs</button>
-        <hr />
-        {renderNFTs()}
       </div>
     );
   };
@@ -141,7 +115,7 @@ export default function HomePage() {
       </nav>
       <main className="content">
         <header>
-          <h1 style={{ fontSize: "2rem" }}>Welcome to the Wallet</h1>
+          <h1 style={{ fontSize: "2rem" }}>Shubham Wallet Functions Wallet </h1>
         </header>
         {initUser()}
       </main>
